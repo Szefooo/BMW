@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="Content-Language" content="pl">
-    <meta name="Reply-to" content="JACKDANIELS@jpzpn.pl">
-    <meta name="Title" content="PL 0:2 ALB">
-    <meta name="page-topic" content="bmw, auto, killer">
-    <meta name="Creation_Date" content="2023-09-12">
-    <meta name="Keywords" content="bmw, auto, killer">
-    <meta name="Description" content="GG">
-    <meta name="Robots" content="index, follow">
-    <title>BMW KILLER</title>
-      <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <style>
+        /* Dodaj stylizację według potrzeb */
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF0000;
+            color: red;
             text-align: center;
+            padding: 20px;
         }
-
-        #container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
-  </head>
-  <body>
-    <h1>Król dróg jest tylko jeden</h1>
-        <nav>
-            <ul>
-                <li><a href="#">BMW</a></li>
-                <li><a href="#">Jazda bokiem</a></li>
-                <li><a href="#">Niemcy</a></li>
-            </ul>
-        </nav>
+</head>
+<body>
+    <header>
+        <img src="rogalclick.png" alt="Logo Firmy" style="width: 0px; height: 0px;">
+        <h1>Moje Logo</h1>
+        <img src="rogalclick.png" alt="Zdjęcie" style="width: 300px; height: 200px;">
+        <p>Siema</p>
     </header>
-    
-    <main>
-        <section>
-            <h2>O samochodzie</h2>
-            <p>Jestem BMW i jestem najlepszym samochodem dla 18 latak. Lubimy pluć olejem i go zjadać ale także lubi krzywić felgi od latania bokiem.</p>
-            <p style="text-indent: 20px; text-align: justify;">
-               Za założyciela przedsiębiorstwa uznaje się Karla Rappa oraz Gustava Otto - syna wynalazcy silnika czterosuwowego Nikolausa Augusta Otto. 
-		    W 1916 roku założyli oni Bayerische Flugzeug Werke (BFW) – Bawarską Fabryka Samolotów. 
-		    Rok później nazwę zmieniono na Bayerische Motoren Werke (BMW) – Bawarska Fabryka Silników
-            </p>
-            
-        </section>
-        <div id="container">
-            <img src="341084194a2ab20cb929202b90f7.jpg" alt="BMW THE BEST">
-        </div>
-        
-        <section>
-            <h2>Kontakt</h2>
-            <p>Kontakt to SALONBMW.TDI.pl</p>
-        </section>
-    </main>
-    
+    <nav>
+        <a href="#">Strona SZEFA</a>
+        <a href="https://www.bmw.pl/pl/index.html?clc=BMW.Digital&ctid=Google_Search_Range_5283&ccid=4498&&tl=sea-gl-PL_BMW_NEWCARS_ALWAYSON_POL_BND_BRAND%20CORE_%20-mix-miy-.-sech-BRAND_BND_EXACT_PURE-.-e-bmw-.-.&gad=1&gclid=Cj0KCQjw06-oBhC6ARIsAGuzdw0O-QEUFrf2ymYDimY5tZJnNN0lOtJZpHearf8poQP5uI0eOQlKTccaApl-EALw_wcB&gclsrc=aw.ds>O Nas</a>
+        <a href="https:https://www.sklepopon.com/?utm_campaign=assets_jo&gclid=Cj0KCQjw06-oBhC6ARIsAGuzdw0dAOV9eLhW0vuoxXehcS0nPoloZypn8keU4acSZjBp4AdedCKK8SgaAiaHEALw_wcB">Współprace</a>
+        <a href="https://https://zlomglen.pl/">Kontakt</a>
+    </nav>
+    <section>
+        <h2>Strona Główna</h2>
+		<img src="clicklik.png" alt="zaklady" style="width: 1300px; height: 1300px;">
+        <p>Tutaj znajdziesz informacje o naszej firmie.</p>
+    </section>
     <footer>
-        <p>&copy; Jazda bokiem</p>
+        <p>&copy; 2023 Rogal Click</p>
+        <p>Data: <span id="currentDate"></span></p>
+        <script>
+            // JavaScript, który automatycznie ustawia aktualną datę
+            const currentDateElement = document.getElementById('currentDate');
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+            const day = currentDate.getDate().toString().padStart(2, '0');
+            currentDateElement.textContent = `${day}.${month}.${year}`;
+        </script>
     </footer>
-  <h1>:)</h1>
-  </body>
+</body>
 </html>
+
