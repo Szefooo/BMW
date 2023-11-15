@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamów bilety na koncert KIZO!</title>
+    <style>
+	body {
+    background-image: url('Kizo.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: 100% 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #FF33FF;
+			font-size: 20px;
+			font-weight: 700;
+        }
+        h1 {
+            text-align: center;
+            color: #FF33FF;
+            font-family: Garamond;
+            font-size: 4em;
+            
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #FF33FF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: hsl(56, 100%, 35%);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            margin: 5px 0;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="font-family: Garamond">
+        <h1>Kizo - koncert</h1>
+        <form action="mailto:kowalczykkacper400@gmail.com" method="post">
+            <label for="imie">Podaj imię i nazwisko:</label>
+            <input type="text" id="imie" name="imie" required>
+
+            <label for="email">Podaj adres e-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefon">Podaj numer telefonu:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+
+            <label for="ilosc_biletow">Podaj ile chcesz biletów:</label>
+            <input type="number" id="ilosc_biletow" name="ilosc_biletow" required>
+
+            <label for="data_koncertu">Wybierz datę koncertu:</label>
+            <select id="data_koncertu" name="data_koncertu" required>
+                <option value="2023-07-12">12 Lipca 2023</option>
+                <option value="2023-07-15">15 Lipca 2023</option>
+                <option value="2023-07-17">17 Lipca 2023</option>
+                <option value="2023-07-20">20 Lipca 2023</option>
+                <option value="2023-17-25">25 Lipca 2023</option>
+            </select>
+            <label for="picie">Co chcesz wypić?</label>
+            <select id="picie" name="picie">
+                <option value="brak">Nic</option>
+                <option value="pizza">Woda</option>
+                <option value="burger">Piwo</option>
+                <option value="hotdog">Coca cola</option>
+                <option value="napoje">Pepsi</option>
+				
+            </select>
+
+            <label for="jedzenie">Co chcesz zjeść?</label>
+            <select id="jedzenie" name="jedzenie">
+                <option value="brak">Nic</option>
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="hotdog">Hotdog</option>
+                <option value="napoje">Spaghetti</option>
+            </select>
+ <label>Jakie nuty chcesz usłyszeć?:</label>
+        <label for="piosenka1">Disney</label>
+		<input type="checkbox" id="Piosenka1" name="piosenki[]" value="piosenka1">
+        <label for="piosenka2">Patocelebryta</label>
+		<input type="checkbox" id="piosenka2" name="piosenki[]" value="piosenka2">
+        <label for="piosenka3">Aladin</label>
+		<input type="checkbox" id="Piosenka3" name="piosenki[]" value="piosenka3">
+        <label for="piosenka4">Lucky Punch</label>
+		<input type="checkbox" id="Piosenka4" name="piosenki[]" value="piosenka4">
+        <label for="piosenka5">Czempion</label>
+		<input type="checkbox" id="Piosenka5" name="piosenki[]" value="piosenka5">
+        <label for="piosenka6">Taxi</label>
+		<input type="checkbox" id="Piosenka6" name="piosenki[]" value="piosenka6">
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="zgoda" required>
+                    Wyrażam zgodę na przetwarzanie danych osobowych.
+                </label>
+            </div>
+            <button type="submit">Wyślij zgłoszenie</button>
+        </form>
+    </div>
+</body>
+</html>
